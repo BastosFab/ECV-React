@@ -12,7 +12,7 @@ function Header() {
             <div className={'navbar-menu'}>
                 <img src={logo} className="App-logo" alt="logo" />
                 <NavLink to="/" className={'item'}>
-                    Cours React
+                    React
                 </NavLink>
                 <NavDropdown title={'Exemples'} className={'item item-dropdown'}>
                     <NavDropdown.Item>

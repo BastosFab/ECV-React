@@ -4,6 +4,7 @@ import Exemple1 from "../components/exemple/Exemple1";
 import Exemple2 from "../components/exemple/Exemple2";
 import Exemple3 from "../components/exemple/Exemple3";
 import Exemple4 from "../components/exemple/Exemple4";
+import Home from "../components/Home";
 
 const MainRouter = () => {
     return(
@@ -11,7 +12,7 @@ const MainRouter = () => {
             <Route path='/404' element={<div>404 t'as cru aller où comme ça</div>}/>
             <Route
                 path='/'
-                element={<div>Hello</div>}/>
+                element={<Home/>}/>
             <Route
                 path='/todolist'
                 element={<Todo/>}
