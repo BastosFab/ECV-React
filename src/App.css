@@ -1,4 +1,4 @@
-.theme-dark {
+.dark {
   --dark-text: #161a2b;
   --light-text: #fff;
   --dark-background: #161a2b;
@@ -17,7 +17,7 @@
   --display-sun: block;
 }
 
-.theme-light {
+.light {
   --dark-text: #fff;
   --light-text: #161a2b;
   --dark-background: #f6f6f6;
@@ -237,14 +237,6 @@ h3 {
   color: var(--light-text);
 }
 
-.display-moon {
-  display: var(--display-moon);
-}
-
-.display-sun {
-  display: var(--display-sun);
-}
-
 .dropdown-menu {
   position: absolute !important;
   top: 40px !important;
@@ -317,6 +309,15 @@ h3 {
 }
 
 @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
