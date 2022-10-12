@@ -4,23 +4,21 @@ import button from "bootstrap/js/src/button";
 function Theme() {
     const [theme, setTheme] = useState(false);
 
-    const handleClick = (event) => {
+    const handleClick = () => {
         if (theme === false) {
-            event: setTheme(true)
-            document.body.classList.add('theme-light');
-            document.body.classList.remove('theme-dark');
-
+            setTheme(true)
+            document.body.classList.add('light');
         } else {
             setTheme(false)
-            document.body.classList.add('theme-dark');
-            document.body.classList.remove('theme-light');
+            document.body.classList.remove('light');
         }
     }
 
     return(
-        <button onClick={handleClick} className={'toggle-theme'}>
-            <i className="fa-solid fa-sun display-sun"></i>
-            <i className="fa-solid fa-moon display-moon"></i>
+        <button onClick={handleClick} className={'toggle-theme'}
+            variant={theme ? 'dark' : 'light'}>{
+            theme ? <i className="fa-solid fa-moon"></i> : <i className="fa-solid fa-sun"></i>
+        }
         </button>
     )
 }
