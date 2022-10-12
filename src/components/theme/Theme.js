@@ -1,6 +1,6 @@
 import {useState} from "react";
 import button from "bootstrap/js/src/button";
-import '/src/components/assets/font-6/css/all.css'
+import '../assets/font-6/css/all.css'
 
 function Theme() {
     const [theme, setTheme] = useState(false);
